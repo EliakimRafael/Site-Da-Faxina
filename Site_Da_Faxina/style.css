@@ -15,7 +15,7 @@ body {
   line-height: 1.5;
 }
 
-/* CABEÇALHO MAIS FINO */
+/* CABEÇALHO */
 header {
   width: 100%;
   padding: 6px 8%;
@@ -37,7 +37,7 @@ header {
   gap: 25px;
 }
 
-/* LOGO MENOR PARA A BARRA FICAR FINA */
+/* LOGO */
 .logo img {
   height: 80px;
   width: auto;
@@ -47,18 +47,18 @@ header {
   object-fit: contain;
 }
 
-/* MENU COM LETRAS MAIORES */
+/* MENU */
 nav {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 24px;
 }
 
 nav a {
   text-decoration: none;
   color: #0f172a;
   font-weight: 800;
-  font-size: 21px;
+  font-size: 19px;
   transition: 0.3s;
 }
 
@@ -577,16 +577,59 @@ footer {
   color: #64748b;
 }
 
+/* PÁGINAS LEGAIS: PRIVACIDADE, COOKIES E TERMOS */
+.pagina-legal {
+  min-height: 100vh;
+  background: #f5f7fa;
+  padding: 60px 8%;
+}
+
+.legal-box {
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  padding: 45px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.legal-box h1 {
+  font-size: 38px;
+  color: #0f172a;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.legal-box h2 {
+  font-size: 24px;
+  color: #0891b2;
+  margin-top: 28px;
+  margin-bottom: 10px;
+}
+
+.legal-box p {
+  font-size: 17px;
+  color: #475569;
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+
+.legal-box .btn {
+  margin-top: 25px;
+}
+
 /* RESPONSIVO */
-@media (max-width: 1000px) {
+@media (max-width: 1150px) {
   nav {
-    gap: 18px;
+    gap: 16px;
   }
 
   nav a {
-    font-size: 18px;
+    font-size: 17px;
   }
+}
 
+@media (max-width: 1000px) {
   .logo img {
     height: 66px;
     max-width: 210px;
@@ -659,7 +702,7 @@ footer {
 
     background-image:
       linear-gradient(rgba(255, 255, 255, 0.90), rgba(255, 255, 255, 0.90)),
-      url("imagens/fundo-servico.png");
+      url("imagem fundo/fundo3.png");
   }
 
   .hero h1 {
@@ -704,6 +747,28 @@ footer {
 
   .footer-links {
     justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .pagina-legal {
+    padding: 35px 5%;
+  }
+
+  .legal-box {
+    padding: 28px 22px;
+  }
+
+  .legal-box h1 {
+    font-size: 30px;
+  }
+
+  .legal-box h2 {
+    font-size: 21px;
+  }
+
+  .legal-box p {
+    font-size: 16px;
   }
 }
 
